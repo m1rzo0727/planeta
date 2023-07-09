@@ -2,3 +2,21 @@
   margin: 0;
   padding: 0;
 }
+
+.name {
+}
+
+.demo-logo {
+  width: 100%;
+  background: #001529;
+  height: 50px;
+}
+
+.color {
+  width: 10px;
+  height: 10px;
+  /* background: #b7e3ff; */
+  background: #b7e3ff;
+  background: #0856cf;
+  /* background: #4B92FF; */
+}
