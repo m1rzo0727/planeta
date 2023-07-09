@@ -27,40 +27,39 @@ function getItem(label, key, icon, children) {
 const items = [
   {
     key: 1,
-    label: (<Link to={"/"}><Home/></Link>),
+    label: (<Link to={"/"}>Home</Link>),
   },
   {
     key: 2,
-    label: (<Link to={"/mercury"}><Mercury/></Link>),
+    title: "Mercury",
+    label: (<Link to={"/mercury"}>Mercury</Link>),
   },
   {
     key: 3,
-    label: (<Link to={"/venus"}><Venus/></Link>),
+    label: (<Link to={"/venus"}>Venus</Link>),
   },
   {
     key: 4,
-    label: (<Link to={"/earth"}><Earth/></Link>),
+    label: (<Link to={"/earth"}>Earth</Link>),
   },
   {
     key: 5,
-    label: (<Link to={"/mars"}><Mars/></Link>),
+    label: (<Link to={"/mars"}>Mars</Link>),
   },
   {
     key: 6,
-    label: (<Link to={"/jupiter"}><Jupiter/></Link>),
+    label: (<Link to={"/jupiter"}>Jupiter</Link>),
   },
   {
     key: 7,
-    label: (<Link to={"/saturn"}><Saturn/></Link>),
+    label: (<Link to={"/saturn"}>Saturn</Link>),
   },
   {
-    key: 8,
-    label: (<Link to={"/uranus"}><Uranus/></Link>),
-    icon:<Icon></Icon>
+    key: 8,label: (<Link to={"/uranus"}></Link>)
   },
   {
     key: 9,
-    label: (<Link to={"/neptune"}><Neptune/></Link>),
+    label: (<Link to={"/neptune"}>Neptune</Link>),
   },
 
   // getItem("Venus", "2", <PieChartOutlined />),
