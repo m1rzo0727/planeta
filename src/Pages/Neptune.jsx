@@ -44,7 +44,9 @@ const Naptune = () => {
           </Card>
         </div>
       </div>
-      <div className="table"></div>
+      <div className="table">
+        
+      </div>
     </section>
   );
 };

@@ -1,7 +1,8 @@
 import { Image, Card } from "antd";
 import {} from "@ant-design/icons";
-// import Card from "antd/es/card/Card";
 import { React, useState } from "react";
+
+import first from "../Images/planet.jpg";
 
 const Home = () => {
   const [visible, setVisible] = useState(false);
@@ -13,15 +14,6 @@ const Home = () => {
 
   const name = <h1 className="name">Planet</h1>;
   const description = <p className="description">Planets descriptions</p>;
-
-  const first =
-    "https://gw.alipayobjects.com/zos/antfincdn/LlvErxo8H9/photo-1503185912284-5271ff81b9a8.webp";
-
-  const second =
-    "https://gw.alipayobjects.com/zos/antfincdn/cV16ZqzMjW/photo-1473091540282-9b846e7965e3.webp";
-
-  const third =
-    "https://gw.alipayobjects.com/zos/antfincdn/x43I27A55%26/photo-1438109491414-7198515b166b.webp";
 
   return (
     <section id="section">
@@ -42,13 +34,11 @@ const Home = () => {
               }}
             >
               <Image src={first} />
-              <Image src={second} />
-              <Image src={third} />
             </Image.PreviewGroup>
           </div>
         </div>
         <div className="text">
-          <Card title={name}>
+          <Card title={name} >
             <h2>{description}</h2>
           </Card>
         </div>
