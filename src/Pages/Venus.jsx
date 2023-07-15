@@ -1,7 +1,8 @@
 import { Image, Card } from "antd";
 import {} from "@ant-design/icons";
-// import Card from "antd/es/card/Card";
 import { React, useState } from "react";
+
+import first from "../Images/Venus/Venus1.png";
 
 const Venus = () => {
   const [visible, setVisible] = useState(false);
@@ -15,18 +16,13 @@ const Venus = () => {
   const description = (
     <p className="description">
       Quyosh sistemasining Quyoshdan uzoqligi jihatdan ikkinchi sayyorasi.
-      Quyoshdan oʻrtacha uzoqligi 108,3 mln km. Atmosferada sezilarli darajada suv bugʻi topilmagan.
+      Quyoshdan oʻrtacha uzoqligi 108,3 mln km. Atmosferada sezilarli darajada
+      suv bugʻi topilmagan.
     </p>
   );
 
-  const first =
-    "";
-
-  const second =
-    "https://gw.alipayobjects.com/zos/antfincdn/cV16ZqzMjW/photo-1473091540282-9b846e7965e3.webp";
-
-  const third =
-    "https://gw.alipayobjects.com/zos/antfincdn/x43I27A55%26/photo-1438109491414-7198515b166b.webp";
+  // const first = "../Images/Venus/Venus1.png";
+  
 
   return (
     <section id="section">
@@ -39,6 +35,7 @@ const Venus = () => {
             src={first}
             onClick={() => setVisible(true)}
           />
+
           <div className="hidden">
             <Image.PreviewGroup
               preview={{
@@ -47,8 +44,7 @@ const Venus = () => {
               }}
             >
               <Image src={first} />
-              <Image src={second} />
-              <Image src={third} />
+           
             </Image.PreviewGroup>
           </div>
         </div>

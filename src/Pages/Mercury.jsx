@@ -1,7 +1,8 @@
 import { Image, Card, Avatar } from "antd";
 import {} from "@ant-design/icons";
-// import Card from "antd/es/card/Card";
 import { React, useState } from "react";
+
+import first from "../Images/Mercury/Mercury1.png";
 
 const Mercury = () => {
   const [visible, setVisible] = useState(false);
@@ -25,14 +26,6 @@ const Mercury = () => {
     </p>
   );
 
-  const first = "../Images/Mercury/Mercury.png";
-
-  const second =
-    "https://gw.alipayobjects.com/zos/antfincdn/cV16ZqzMjW/photo-1473091540282-9b846e7965e3.webp";
-
-  const third =
-    "https://gw.alipayobjects.com/zos/antfincdn/x43I27A55%26/photo-1438109491414-7198515b166b.webp";
-
   return (
     <section id="section">
       <div className="content">
@@ -52,8 +45,7 @@ const Mercury = () => {
               }}
             >
               <Image src={first} />
-              <Image src={second} />
-              <Image src={third} />
+              
             </Image.PreviewGroup>
           </div>
         </div>
@@ -64,7 +56,7 @@ const Mercury = () => {
         </div>
       </div>
       <div className="table">
-        <img src={first} alt=""  />
+       
       </div>
     </section>
   );

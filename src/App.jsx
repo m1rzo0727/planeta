@@ -3,7 +3,6 @@ import { Layout, Menu, theme } from "antd";
 import { Link, Outlet } from "react-router-dom";
 import { IconProvider } from "@ant-design/icons";
 
-import Jupiter from "./Images/Jupiter.png";
 import JupiterImg from "./Companets/JupiterImg";
 import PlanetImg from "./Companets/PlanetImg";
 import MercuryImg from "./Companets/MercuryImg";
