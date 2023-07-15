@@ -1,75 +1,70 @@
 import { useState } from "react";
-import {  Layout, Menu, theme } from "antd";
+import { Layout, Menu, theme } from "antd";
 import { Link, Outlet } from "react-router-dom";
+import { IconProvider } from "@ant-design/icons";
 
-import Home from "./Pages/Home";
-import Venus from "./Pages/Venus";
-import Mercury from "./Pages/Mercury";
-import Earth from "./Pages/Earth";
-import Mars from "./Pages/Mars";
-import Jupiter from "./Pages/Jupiter";
-import Saturn from "./Pages/Saturn";
-import Neptune from "./Pages/Neptune";
-import Uranus from "./Pages/Uranus";
-import Icon from "./Companets/Icon";
+import Jupiter from "./Images/Jupiter.png";
+import JupiterImg from "./Companets/JupiterImg";
+import PlanetImg from "./Companets/PlanetImg";
+import MercuryImg from "./Companets/MercuryImg";
+import VenusImg from "./Companets/VenusImg";
+import EarthImg from "./Companets/EarthImg";
+import MarsImg from "./Companets/MarsImg";
+import SaturnImg from "./Companets/SaturnImg";
+import UranusImg from "./Companets/UranusImg";
+import NeptuneImg from "./Companets/NeptuneImg";
 
+const { Sider } = Layout;
 
-
-const { Header, Content, Footer, Sider } = Layout;
-function getItem(label, key, icon, children) {
-  return {
-    key,
-    icon,
-    children,
-    label,
-  };
-}
-const items = [
+const NavbarMenu = [
   {
     key: 1,
-    label: (<Link to={"/"}>Home</Link>),
+    label: <Link to={"/"}>Planet Info</Link>,
+    icon: <PlanetImg />,
   },
   {
     key: 2,
     title: "Mercury",
-    label: (<Link to={"/mercury"}>Mercury</Link>),
+    label: <Link to={"/mercury"}>Mercury</Link>,
+    icon: <MercuryImg />,
   },
   {
     key: 3,
-    label: (<Link to={"/venus"}>Venus</Link>),
+    label: <Link to={"/venus"}>Venus</Link>,
+    icon: <VenusImg />,
   },
   {
     key: 4,
-    label: (<Link to={"/earth"}>Earth</Link>),
+    label: <Link to={"/earth"}>Earth</Link>,
+    icon: <EarthImg />,
   },
   {
     key: 5,
-    label: (<Link to={"/mars"}>Mars</Link>),
+    label: <Link to={"/mars"}>Mars</Link>,
+    icon: <MarsImg />,
   },
   {
     key: 6,
-    label: (<Link to={"/jupiter"}>Jupiter</Link>),
+    label: <Link to={"/jupiter"}>Jupiter</Link>,
+    icon: <JupiterImg />,
   },
   {
     key: 7,
-    label: (<Link to={"/saturn"}>Saturn</Link>),
+    label: <Link to={"/saturn"}>Saturn</Link>,
+    icon: <SaturnImg />,
   },
   {
-    key: 8,label: (<Link to={"/uranus"}></Link>)
+    key: 8,
+    label: <Link to={"/uranus"}>Uranus</Link>,
+    icon: <UranusImg />,
   },
   {
     key: 9,
-    label: (<Link to={"/neptune"}>Neptune</Link>),
+    label: <Link to={"/neptune"}>Neptune</Link>,
+    icon: <NeptuneImg />,
   },
-
-  // getItem("Venus", "2", <PieChartOutlined />),
-  // getItem("Earth", "3", <PieChartOutlined />),
-  // getItem("Mars", "4", <PieChartOutlined />),
-  // getItem("Jupiter", "5", <PieChartOutlined />),
-  // getItem("Saturn", "6", <PieChartOutlined />),
-  // getItem("Uranus", "7", <PieChartOutlined />),
-  // getItem("Neptune", "8", <PieChartOutlined />),
 ];
+
 const App = () => {
   const [collapsed, setCollapsed] = useState(false);
   const {
@@ -88,9 +83,10 @@ const App = () => {
       >
         <Menu
           theme="dark"
+          className="sidebar-menu"
           defaultSelectedKeys={["1"]}
           mode="inline"
-          items={items}
+          items={NavbarMenu}
         />
       </Sider>
       <Layout>

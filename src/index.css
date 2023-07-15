@@ -1,3 +1,51 @@
+/* rubik-400 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./Fonts/rubik-v28-latin-400.woff2") format("woff2");
+}
+/* rubik-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./Fonts/rubik-v28-latin-500.woff2") format("woff2");
+}
+/* rubik-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./Fonts/rubik-v28-latin-600.woff2") format("woff2");
+}
+/* rubik-700 - latin */
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  src: url("./Fonts/rubik-v28-latin-700.woff2") format("woff2");
+}
+
+/* rubik-800 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./Fonts/rubik-v28-latin-800.woff2") format("woff2");
+}
+/* rubik-900 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./Fonts/rubik-v28-latin-900.woff2") format("woff2");
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,17 +53,47 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  color: #fff;
+  background: #000;
+}
+
+body {
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+}
+
+#section {
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 10px;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+  background-repeat: no-repeat;
+  justify-content: space-evenly;
+  background-image: url("./Images/background.avif");
 }
 
 .content {
   gap: 20px;
   width: 100%;
-  height: 100%;
   display: flex;
-  padding: 50px 10px;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+.navbar-logo {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .img {
@@ -31,6 +109,47 @@
   max-width: 500px;
 }
 
-.text h2 {
+/* .card {
+  color: #ddd;
+  color: #ddd;
+  background: #002140;
+} */
+
+.name {
+  color: #ddd;
+  font-size: 35px;
+}
+
+.description {
   font-size: 25px;
+}
+
+.planet-icon {
+  max-width: 40px;
+  max-height: 40px;
+  margin-right: 10px;
+}
+
+@media (max-width: 1120px) {
+  .content {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .name {
+    font-size: 25px;
+  }
+  .description {
+    font-size: 15px;
+  }
+}
+@media (max-width: 430px) {
+  .content {
+    display: flex;
+    justify-content: center;
+  }
 }
